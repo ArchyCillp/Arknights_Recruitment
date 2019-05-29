@@ -13,7 +13,7 @@ class worker(object):
         return (self.star < other.star)
 
 def main(): 
-    f = open("./data/tags.txt")
+    f = open("./data/tags.txt", encoding="utf-8")
     text = f.readlines()
     f.close()
     workers = []
@@ -24,9 +24,10 @@ def main():
     for w in workers:
         for tag in w.tags:
             tags_set.add(tag)
+    tag_order_list = sorted(list(tags_set))
     tags_map = {}
     cnt = 1
-    for tag in tags_set:
+    for tag in tag_order_list:
         tags_map[cnt] = tag
         cnt += 1
     print(
