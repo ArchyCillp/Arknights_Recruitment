@@ -38,7 +38,13 @@ def main():
         print(tag[0], tag[1])
     print(
     '''
-        Please input the the serial numbers of the tag you have and end with -1. 
+        Please input the a serial number of the tag per line and end with -1.
+        For example:
+        1
+        2
+        5
+        -1
+         
     '''
     )
     having_tags = set()
