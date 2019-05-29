@@ -31,7 +31,7 @@ def main():
         cnt += 1
     print(
     '''
-        Welcome to Arknights Recruitment Recommander!
+        Welcome to Arknights Recruitment Recommender!
     '''
     )
     for tag in tags_map.items():
